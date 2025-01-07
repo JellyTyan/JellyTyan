@@ -74,8 +74,9 @@
 
 <img src="https://raw.githubusercontent.com/JellyTyan/JellyTyan/output/github-contribution-grid-snake-dark.svg" alt="Snake animation" />
 
-## Top Projects
-<h3 align="left">Support:</h3>
+###
+
+<h3 align="left">Top Projects:</h3>
 
 - [Marmeladka](https://github.com/JellyTyan/Marmeladka): My main Discord bot. ⭐️ 3 stars | Language: Python | Forks: 0 | Issues: 0
 - [Zefirka](https://github.com/JellyTyan/Zefirka): A powerful Discord music bot using Kazagumo and Shoukaku. ⭐️ 5 stars | Language: TypeScript | Forks: 1 | Issues: 0
