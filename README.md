@@ -82,7 +82,7 @@
 - [Zefirka](https://github.com/JellyTyan/Zefirka): A powerful Discord music bot using Kazagumo and Shoukaku. ⭐️ 4 stars | Language: TypeScript | Forks: 1 | Issues: 0
 - [bismark](https://github.com/JellyTyan/bismark): A YouTube downloader website. ⭐️ 3 stars | Language: Python | Forks: 1 | Issues: 0
 - [Anime-News](https://github.com/JellyTyan/Anime-News): A Telegram bot for anime news. ⭐️ 1 star | Language: Python | Forks: 1 | Issues: 0
-- [Charlotte](https://github.com/JellyTyan/Charlotte): A powerful Telegram bot for downloading content. ⭐️ 3 stars | Language: Python | Forks: 0 | Issues: 0
+- [Charlotte](https://github.com/JellyTyan/Charlotte): A powerful Telegram bot for downloading content. ⭐️ 5 stars | Language: Python | Forks: 0 | Issues: 0
 
 ###
 
