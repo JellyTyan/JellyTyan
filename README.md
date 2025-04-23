@@ -8,23 +8,7 @@ Type 'help' to list available projects.
 
 ### ₍𝄐 ̫͡ 𝄐₎ `$ neofetch`
 
-<div style="display: flex; align-items: center; font-family: monospace; padding: 20px; border-radius: 12px;">
-  <img height="300" src="https://i.imgur.com/TmuntFr.jpeg" style="border-radius: 60px; border: 2px solid black; margin-right: 30px;" />
-  <div style="line-height: 0.9;">
-    <div style="font-weight: bold; font-size: 1.2em;">🐸 JellyTyan@Jellys-Profile.local</div>
-    <p>-------------------------------------</p>
-    <p><strong>OS</strong>: frogOS :: unstable build 0.13.37</p>
-    <p><strong>Host</strong>: localhost (OC brain, UC patience)</p>
-    <p><strong>Kernel</strong>: custom-ribbit-kernel v4rog</p>
-    <p><strong>Shell</strong>: Bash, Zsh, and occasional frog screeches</p>
-    <p><strong>Runtime</strong>: Python + Java + caffeine + cursed scripts</p>
-    <p><strong>Uptime</strong>: ∞ (sleep mode pending)</p>
-    <p><strong>Mood</strong>: mlem mlem 🐸</p>
-    <p><strong>Current Load</strong>: <code>projects.charlotte --debug</code></p>
-    <p><strong>Totem Animal</strong>: Frog (chaotic good, sticky hands)</p>
-    <p><strong>Fun Fact</strong>: <i>"All hat, no cattle"</i> — but I code like I mean it.</p>
-  </div>
-</div>
+ <img height="300" src=".github/assets/Neofetch.png" style=" margin-right: 30px;" />
 
 
 ---
