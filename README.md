@@ -8,7 +8,7 @@ Type 'help' to list available projects.
 
 ### ₍𝄐 ̫͡ 𝄐₎ `$ neofetch`
 
- <img height="300" src=".github/assets/Neofetch.png" style=" margin-right: 30px;" />
+ <img height="300" src=".github/assets/Neofetch-github.png" style=" margin-right: 30px;" />
 
 
 ---
