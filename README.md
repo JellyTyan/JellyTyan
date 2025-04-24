@@ -8,8 +8,7 @@ Type 'help' to list available projects.
 
 ### ₍𝄐 ̫͡ 𝄐₎ `$ neofetch`
 
- <img height="300" src=".github/assets/Neofetch-github.png" style=" margin-right: 30px;" />
-
+ <img src=".github/assets/Neofetch-github.png"/>
 
 ---
 
@@ -26,12 +25,12 @@ $ curl github.com/jellytyan/stats
 | [**Zefirka**](https://github.com/JellyTyan/Zefirka) | ![Stars](https://img.shields.io/github/stars/JellyTyan/Zefirka?style=social) | Discord music bot with Kazagumo |
 | [**Marmeladka**](https://github.com/JellyTyan/Marmeladka) | ![Stars](https://img.shields.io/github/stars/JellyTyan/Marmeladka?style=social) | Discord bot with weird features |
 | [**Bismark**](https://github.com/NullPointerGang/bismark) | ![Stars](https://img.shields.io/github/stars/NullPointerGang/bismark?style=social) | YouTube downloader web UI |
-| [**Anime-News**](https://github.com/JellyTyan/Anime-News) | ![Stars](https://img.shields.io/github/stars/JellyTyan/Anime-News?style=social) | Telegram anime news bot |
+| [**Kokoro No Kiroku**](https://github.com/JellyTyan/KokoroNoKiroku) | ![Stars](https://img.shields.io/github/stars/JellyTyan/KokoroNoKiroku?style=social) | Very beautiful and usefull anime list |
 ---
 ### `(•̀ᴗ•́)و ̑̑` $ ls skills/*
 
 <!-- <p align="left"> -->
-  <img src="https://skillicons.dev/icons?i=js,ts,py,java,rust,html,css,vue,discordjs,blender,unreal,docker,arduino,vscode,webstorm,pycharm,arch,windows,apple&perline=11" />
+  <img src="https://skillicons.dev/icons?i=js,ts,py,java,rust,html,css,vue,discordjs,blender,unreal,docker,arduino,vscode,webstorm,pycharm,&perline=11" />
 <!-- </p> -->
 
 ---
