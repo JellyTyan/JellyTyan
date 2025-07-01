@@ -48,10 +48,12 @@ $ curl github.com/jellytyan/analytics
   <img src="https://github-readme-stats.vercel.app/api/top-langs?username=JellyTyan&layout=compact&langs_count=8&theme=merko" height="150"/>
 </span>
 <img src="https://raw.githubusercontent.com/JellyTyan/JellyTyan/output/github-contribution-grid-snake-dark.svg" alt="Snake animation" />
-
 <div align="left">
   <img src="https://github-profile-trophy.vercel.app/?username=JellyTyan&theme=juicyfresh&row=2&column=4" />
 </div>
+
+<img src="https://counter.seku.su/cmoe?name=jellytyan" />
+
 <pre style="background-color: #1e1e1e; color: #c7c7c7; padding: 10px; border-radius: 10px; font-family: monospace;">
 # wow such skills, much frogs 🐸✨
 # fullstack.exe has entered the swamp
