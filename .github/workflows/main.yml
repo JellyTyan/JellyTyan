@@ -1,41 +1,88 @@
-name: generate animation
+name: generate profile assets
 
 on:
-  # run automatically every 24 hours
   schedule:
-    - cron: "0 */24 * * *" 
-  
-  # allows to manually run the job at any time
+    - cron: "0 */24 * * *"
   workflow_dispatch:
-  
-  # run on every push on the master branch
   push:
     branches:
-    - master
-    
-  
+      - master
 
 jobs:
   generate:
-    permissions: 
+    permissions:
       contents: write
     runs-on: ubuntu-latest
-    timeout-minutes: 5
-    
+    timeout-minutes: 10
+
     steps:
-      # generates a snake game from a github user (<github_user_name>) contributions graph, output a svg animation at <svg_out_path>
-      - name: generate github-contribution-grid-snake.svg
+      # ===============================
+      # GitHub Stats
+      # ===============================
+      - name: generate github stats
+        uses: anuraghazra/github-readme-stats@master
+        with:
+          username: ${{ github.repository_owner }}
+          show_icons: true
+          include_all_commits: true
+          count_private: true
+          theme: dark
+          bg_color: 000000
+          title_color: 00ff00
+          text_color: 00ff00
+          icon_color: 00ff00
+          hide_border: true
+          output: |
+            dist/github-stats.svg
+        env:
+          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+
+      # ===============================
+      # Top Languages
+      # ===============================
+      - name: generate top languages
+        uses: anuraghazra/github-readme-stats@master
+        with:
+          username: ${{ github.repository_owner }}
+          card: top-langs
+          layout: compact
+          langs_count: 8
+          count_private: true
+          theme: dark
+          bg_color: 000000
+          title_color: 00ff00
+          text_color: 00ff00
+          hide_border: true
+          output: |
+            dist/top-langs.svg
+        env:
+          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+
+      # ===============================
+      # GitHub Trophies
+      # ===============================
+      - name: generate trophies
+        run: |
+          mkdir -p dist
+          curl -L \
+            "https://github-profile-trophy.vercel.app/?username=${{ github.repository_owner }}&theme=matrix&no-frame=true&column=6" \
+            -o dist/trophies.svg
+
+      # ===============================
+      # Contribution Snake
+      # ===============================
+      - name: generate contribution snake
         uses: Platane/snk/svg-only@v3
         with:
           github_user_name: ${{ github.repository_owner }}
           outputs: |
             dist/github-contribution-grid-snake.svg
             dist/github-contribution-grid-snake-dark.svg?palette=github-dark
-          
-          
-      # push the content of <build_dir> to a branch
-      # the content will be available at https://raw.githubusercontent.com/<github_user>/<repository>/<target_branch>/<file> , or as github page
-      - name: push github-contribution-grid-snake.svg to the output branch
+
+      # ===============================
+      # Push to output branch
+      # ===============================
+      - name: push assets to output branch
         uses: crazy-max/ghaction-github-pages@v3.1.0
         with:
           target_branch: output
