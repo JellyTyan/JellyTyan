@@ -43,13 +43,13 @@ $ curl github.com/jellytyan/analytics
 > Retrieving stats...
 > Rendering coolness...
 </pre>
-<span>
-  <img src="https://github-readme-stats.vercel.app/api?username=JellyTyan&show_icons=true&theme=merko&include_all_commits=true&count_private=true" height="150"/>
-  <img src="https://github-readme-stats.vercel.app/api/top-langs?username=JellyTyan&layout=compact&langs_count=8&theme=merko" height="150"/>
-</span>
-<img src="https://raw.githubusercontent.com/JellyTyan/JellyTyan/output/github-contribution-grid-snake-dark.svg" alt="Snake animation" />
-<div align="left">
-  <img src="https://github-profile-trophy.vercel.app/?username=JellyTyan&theme=juicyfresh&row=2&column=4" />
+<div align="center">
+
+  <img src="./metrics-header.svg" alt="Header" width="100%">
+  <img src="./metrics-langs.svg" alt="Header" width="100%">
+
+  <img src="./metrics-iso.svg" alt="Iso Calendar" width="100%">
+
 </div>
 
 <img src="https://counter.seku.su/cmoe?name=jellytyan" />
