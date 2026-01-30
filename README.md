@@ -45,10 +45,10 @@ $ curl github.com/jellytyan/analytics
 </pre>
 <div align="center">
 
-  <img src="./metrics-header.svg" alt="Header" width="100%">
-  <img src="./metrics-langs.svg" alt="Header" width="100%">
+  <img src="./metrics-header.svg" alt="Header" width="70%">
+  <img src="./metrics-langs.svg" alt="Header" width="70%">
 
-  <img src="./metrics-iso.svg" alt="Iso Calendar" width="100%">
+  <img src="./metrics-iso.svg" alt="Iso Calendar" width="70%">
 
 </div>
 
