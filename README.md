@@ -43,12 +43,12 @@ $ curl github.com/jellytyan/analytics
 > Retrieving stats...
 > Rendering coolness...
 </pre>
-<div align="center">
+<div align="left">
 
-  <img src="./metrics-header.svg" alt="Header" width="70%">
-  <img src="./metrics-langs.svg" alt="Header" width="70%">
+  <img src="./metrics-header.svg" alt="Header" width="50%">
+  <img src="./metrics-langs.svg" alt="Header" width="50%">
 
-  <img src="./metrics-iso.svg" alt="Iso Calendar" width="70%">
+  <img src="./metrics-iso.svg" alt="Iso Calendar" width="50%">
 
 </div>
 
