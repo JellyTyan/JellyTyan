@@ -1,91 +1,59 @@
-name: generate profile assets
-
+name: Split Metrics
 on:
   schedule:
-    - cron: "0 */24 * * *"
+    - cron: "0 0 * * *"
   workflow_dispatch:
   push:
-    branches:
-      - master
+    branches: ["master", "main"]
 
 jobs:
-  generate:
+  github-metrics:
+    runs-on: ubuntu-latest
     permissions:
       contents: write
-    runs-on: ubuntu-latest
-    timeout-minutes: 10
-
     steps:
-      # ===============================
-      # GitHub Stats
-      # ===============================
-      - name: generate github stats
-        uses: anuraghazra/github-readme-stats@master
+      - name: General Stats
+        uses: lowlighter/metrics@latest
         with:
-          username: ${{ github.repository_owner }}
-          show_icons: true
-          include_all_commits: true
-          count_private: true
-          theme: dark
-          bg_color: 000000
-          title_color: 00ff00
-          text_color: 00ff00
-          icon_color: 00ff00
-          hide_border: true
-          output: |
-            dist/github-stats.svg
-        env:
-          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+          token: ${{ secrets.METRICS_TOKEN }}
+          user: ${{ github.repository_owner }}
+          filename: metrics-header.svg
+          base: header, activity, community, repositories
+          config_timezone: Europe/Moscow
 
-      # ===============================
-      # Top Languages
-      # ===============================
-      - name: generate top languages
-        uses: anuraghazra/github-readme-stats@master
+      - name: Languages Pie
+        uses: lowlighter/metrics@latest
         with:
-          username: ${{ github.repository_owner }}
-          card: top-langs
-          layout: compact
-          langs_count: 8
-          count_private: true
-          theme: dark
-          bg_color: 000000
-          title_color: 00ff00
-          text_color: 00ff00
-          hide_border: true
-          output: |
-            dist/top-langs.svg
-        env:
-          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+          token: ${{ secrets.METRICS_TOKEN }}
+          user: ${{ github.repository_owner }}
+          filename: metrics-langs.svg
+          base: ""
+          config_timezone: Europe/Moscow
+          plugin_languages: yes
+          plugin_languages_ignored: html, css, shaderlab
+          plugin_languages_details: lines, percentage
+          plugin_languages_limit: 8
 
-      # ===============================
-      # GitHub Trophies
-      # ===============================
-      - name: generate trophies
-        run: |
-          mkdir -p dist
-          curl -L \
-            "https://github-profile-trophy.vercel.app/?username=${{ github.repository_owner }}&theme=matrix&no-frame=true&column=6" \
-            -o dist/trophies.svg
-
-      # ===============================
-      # Contribution Snake
-      # ===============================
-      - name: generate contribution snake
-        uses: Platane/snk/svg-only@v3
+      - name: Isometric Calendar
+        uses: lowlighter/metrics@latest
         with:
-          github_user_name: ${{ github.repository_owner }}
-          outputs: |
-            dist/github-contribution-grid-snake.svg
-            dist/github-contribution-grid-snake-dark.svg?palette=github-dark
+          token: ${{ secrets.METRICS_TOKEN }}
+          user: ${{ github.repository_owner }}
+          filename: metrics-iso.svg
+          base: ""
+          config_timezone: Europe/Moscow
+          plugin_isocalendar: yes
+          plugin_isocalendar_duration: full-year
 
-      # ===============================
-      # Push to output branch
-      # ===============================
-      - name: push assets to output branch
-        uses: crazy-max/ghaction-github-pages@v3.1.0
+      - name: Lines of Code
+        uses: lowlighter/metrics@latest
         with:
-          target_branch: output
-          build_dir: dist
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.METRICS_TOKEN }}
+          user: ${{ github.repository_owner }}
+          filename: metrics-lines.svg
+          base: ""
+          config_timezone: Europe/Moscow
+          plugin_lines: yes
+          plugin_lines_history_limit: 1
+          plugin_lines_repositories_limit: 4
+          plugin_lines_sections: base
