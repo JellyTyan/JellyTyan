@@ -21,16 +21,16 @@ $ curl github.com/jellytyan/stats
 </pre>
 | Repo | Stars | Description |
 |------|:-----:|-------------|
-| [**Charlotte**](https://github.com/JellyTyan/Charlotte) | ![Stars](https://img.shields.io/github/stars/JellyTyan/Charlotte?style=social) | Telegram content downloader bot |
-| [**Zefirka**](https://github.com/JellyTyan/Zefirka) | ![Stars](https://img.shields.io/github/stars/JellyTyan/Zefirka?style=social) | Discord music bot with Kazagumo |
 | [**Marmeladka**](https://github.com/JellyTyan/Marmeladka) | ![Stars](https://img.shields.io/github/stars/JellyTyan/Marmeladka?style=social) | Discord bot with weird features |
+| [**Zefirka**](https://github.com/JellyTyan/Zefirka) | ![Stars](https://img.shields.io/github/stars/JellyTyan/Zefirka?style=social) | Discord music bot with Kazagumo |
 | [**Bismark**](https://github.com/NullPointerGang/bismark) | ![Stars](https://img.shields.io/github/stars/NullPointerGang/bismark?style=social) | YouTube downloader web UI |
 | [**Kokoro No Kiroku**](https://github.com/JellyTyan/KokoroNoKiroku) | ![Stars](https://img.shields.io/github/stars/JellyTyan/KokoroNoKiroku?style=social) | Very beautiful and usefull anime list |
+| [**Charlotte**](https://github.com/JellyTyan/Charlotte-v2) | ![Stars](https://img.shields.io/github/stars/JellyTyan/Charlotte-v2?style=social) | Telegram content downloader bot |
 ---
 ### `(•̀ᴗ•́)و ̑̑` $ ls skills/*
 
 <!-- <p align="left"> -->
-  <img src="https://skillicons.dev/icons?i=js,ts,py,java,rust,html,css,vue,discordjs,blender,unreal,docker,arduino,vscode,webstorm,pycharm,&perline=11" />
+  <img src="https://skillicons.dev/icons?i=js,ts,py,java,rust,html,css,vue,discordjs,docker,arduino,vscode,webstorm,pycharm,&perline=11" />
 <!-- </p> -->
 
 ---
